@@ -1,7 +1,7 @@
-# ignore .sh
+﻿# ignore .sh
 /*.sh
 /西部小笼包 - 简书_files
 /西部小笼包 - 简书.html
 /.vscode
-/index.html
 /test.html
+/next.html
