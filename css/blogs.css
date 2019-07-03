@@ -1,7 +1,7 @@
 body {
     display: grid;
     grid-template-areas: "l a r";
-    grid-template-columns: 1fr 750px 350px;
+    grid-template-columns: 350px 750px 1fr;
     grid-template-rows: [row1-start]100vh[row1-end];
     background-image: url("../img/bg.jpg");
     /*height: 100vh;*/
