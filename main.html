@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>陈泊润的主页</title>
+        <address><chenborun17@163 class="com"></chenborun17@163></address>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/detail.css">
+        <script type="text/javascript" src="js/select.js"></script>
+    </head>
+    <body> <!--c7edcc-->
+        <!--Start author introduction-->
+        <!--End author introduction-->
+        <aside class="left"></aside>
+        <div id="bg">
+        <header>
+            <div class="author">
+                <img src="img/head.jpg" class="round" alt="头像"/>
+                <div>
+                    <h2>灵动的微光</h2>
+                    <p>个性签名：眼前的黑不是黑，你说的白是什么白。</p>
+                </div>
+                <nav>
+                    <a href="https://github.com/a375D/a375D.github.io" target="_blank">
+                    <img src="img/git.jpg" alt="github" class="github"/>
+                    </a>
+                </nav>
+            </div>
+            <!--Start nav-->
+            <div id="topdiv">
+                <div class="topbar">
+                    <input name="topbar" type="radio" id="home" onclick="myOpen('homediv')">
+                    <label for="home">HOME</label>
+                    <input name="topbar" type="radio" id="blog" onclick="myOpen('blogdiv')">
+                    <label for="blog">BLOGS</label>
+                    <input name="topbar" type="radio" id="about" onclick="myOpen('aboutdiv')">
+                    <label for="about">ABOUT</label>
+                </div>
+            </div>
+            <!--End nav-->
+        </header>
+        <hr style="color: black; height: 3px; z-index: 2;"/>
+        <!--Start main page.-->
+        <article class="main">
+            <div id="blogdiv">
+                <h2>BLOGS</h2>
+                <ul>
+                    <li><a href="blogs/开启前端之旅.html" target="_blank">开启前端之旅</a></li>
+                </ul>
+            </div>
+            <div id="homediv">
+                <h2>HOME</h2>
+                <h3>来自作者的自我介绍：</h3>
+                <p>&emsp;&emsp;我是陈泊润，来自软件学院七字班，加入了软件学院学生科协赛事部，不定期喜欢各类娱乐，
+                包括游戏、小说、电影、电视剧、动漫等。喜欢竞技类游戏。略懂C/C++，JavaScript刚刚起步，打算学习Python。
+                </p>
+            </div>
+            <div id="aboutdiv">
+                <h2>ABOUT</h2>
+                <h3>联系作者：</h3>
+                <ul>
+                    <li><strong>WeChat</strong>：love20151407</li>
+                    <li><strong>E-mail</strong>：chenborun17@163.com</li>
+                </ul>
+            </div>
+        </article>
+        <!--End main page.-->
+        </div>
+        <aside class="right">
+            <h3>个人简介</h3>
+            <table>
+                <tr>
+                <th style="width: 80px">喜欢领域</th>
+                <th><span>动漫</span>&emsp;<span>科幻悬疑</span>&emsp;<span>短篇小说</span></th>
+                </tr><tr>
+            <th>常用领域</th>
+            <th><span>C/C++</span>&emsp;<span>前端</span>&emsp;<span>Python</span>&emsp;
+            <span>手绘</span>&emsp;<span>轻音乐</span></th>
+            </tr>
+            </table>
+            <br/>
+            <h3>近期Blog</h3>
+            <ul>
+            <li><a href="blogs/开启前端之旅.html" target="_blank">开启前端之旅</a></li>
+            </ul>
+        </aside>
+    </body>
+</html>

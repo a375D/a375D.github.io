@@ -1,0 +1,35 @@
+body {
+    display: grid;
+    grid-template-areas: "l a r";
+    grid-template-columns: 1fr 750px 350px;
+    grid-template-rows: [row1-start]100vh[row1-end];
+    background-image: url("../img/bg.jpg");
+    /*height: 100vh;*/
+  }
+
+aside.left {
+    /*flex-grow: 1;*/
+    grid-area: l;
+}
+
+article.main {
+    width: 700px;
+    grid-area: a;
+    margin-left: 30px;
+    min-height: 700px;
+    overflow: auto;
+  /*flex: 1;*/
+}
+
+aside.right {
+    width: 300px;
+    grid-area: r;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 500px;
+    padding-left: 15px;
+}
+
+div#bg {
+    background: rgba(240, 240, 240, 0.7);
+}
