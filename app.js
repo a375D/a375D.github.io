@@ -3,19 +3,16 @@ const express = require('express')
 const app = express()
 const computeRouter = require('./routes/compute')
 const pairRouter = require('./routes/pair')
-const hwToken = '1234567'
-// const hwToken = 'KYPLZPAFKPRDKCNHTBLGTRSBVI'
+const hwToken = 'KYPLZPAFKPRDKCNHTBLGTRSBVI'
 
 app.use('/', express.static(__dirname))
 
 app.all('*', (req, res, next) => {
-  // console.log('getin: ' + req.get('hw-token'))
   if (req.get('hw-token') !== hwToken) {
     console.log('Access denied: wrong hw-token %s', req.get('hw-token'))
     res.status('403').end()
     return
   }
-  // res.setHeader('Content-Type', 'application/json')
   next()
 })
 

@@ -5,7 +5,7 @@ const chai = require('chai');
 
 host = '152.136.140.132'
 server_url = host + ':8000'
-hw_token = '1234567'
+hw_token = 'KYPLZPAFKPRDKCNHTBLGTRSBVI'
 
 describe('Test', function () {
 	describe('Part1_1', function () {

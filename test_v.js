@@ -3,9 +3,9 @@ const request = require('supertest');
 const expect = require('chai').expect;
 const chai = require('chai');
 
-host = ''
+host = '152.136.140.132'
 server_url = host + ':8000'
-hw_token = ''
+hw_token = '1234567'
 
 describe('Test', function() {
 	describe('Part1', function() {
