@@ -18,7 +18,7 @@
 <p>使用了<code>express.static</code>方法构建静态文件服务，在<code>app.use</code>中指定其port为'/'，则直接访问端口即可进入主页。</p>
 
 <h3>实现对hw-token的检测</h3>
-<p>感谢Express对方法的封装，使得可以直接在所有的中间件前使用<code>app.all`方法直接deny非法token的访问。在回调函数中使用<code>res.status()</code>设置状态码，然后使用<code>.end()</code>直接结束。</p>
+<p>感谢Express对方法的封装，使得可以直接在所有的中间件前使用<code>app.all</code>方法直接deny非法token的访问。在回调函数中使用<code>res.status()</code>设置状态码，然后使用<code>.end()</code>直接结束。</p>
 
 <h3>实现GET/POST/DELETE方法</h3>
 <p>在实现不同port的访问时，发现将其全部写入程序入口不是很优雅，查阅资料后找到<code>express.Router()</code>，这使得中间件可以从主程序中分离出来单独开发，而只暴露出其接口。因此对调试与功能分离有很大帮助。</p>
