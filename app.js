@@ -2,12 +2,13 @@ const createError = require('http-errors');
 const express = require('express');
 const app = express();
 const computeRouter = require('./routes/compute');
-//const pairRouter = require('./routes/pair');
+const pairRouter = require('./routes/pair');
 const hw_token = 'KYPLZPAFKPRDKCNHTBLGTRSBVI';
 
 app.use('/', express.static(__dirname));
 
-app.all((req, res, next) => {
+app.all(/(\/.*)/, (req, res, next) => {
+  console.log('getin: ' + req.get('hw-token'));
   if (req.get('hw-token') !== hw_token) {
     console.log('Access denied: wrong hw-token %s', req.get('hw-token'));
     res.status('403').end();
@@ -17,7 +18,7 @@ app.all((req, res, next) => {
 });
 
 app.use('/api/compute', computeRouter);
-//app.use('/api/pair', pairRouter);
+app.use('/api/pair', pairRouter);
 
 app.use((req, res, next) => {
   //next(createError(404));
