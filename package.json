@@ -1,0 +1,26 @@
+{
+  "name": "lab4",
+  "version": "1.0.0",
+  "description": "basic lab 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a375D/a375D.github.io.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Borun Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a375D/a375D.github.io/issues"
+  },
+  "homepage": "https://github.com/a375D/a375D.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3"
+  }
+}
