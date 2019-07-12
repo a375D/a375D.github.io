@@ -6,3 +6,5 @@
 /test.html
 /next.html
 /*.md
+
+/node_modules/
